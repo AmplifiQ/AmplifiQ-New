@@ -1,0 +1,19 @@
+﻿{
+    "title": "Arena Frozen",
+    "slug": "arena-frozen",
+    "video_bg": null,
+    "client": "Iguatemi Porto Alegre",
+    "next-case": null,
+    "type": "Hotsite",
+    "lead": "Incentivando a ida até o Shopping Iguatemi Porto Alegre.",
+    "tags": "#criação #desenvolvimento_tecnológico",
+    "challenge": "<p>Motivar as pessoas a irem no circuito montado pelo shopping por meio de um site. A página deveria seguir as regras de design da Disney para a marca Frozen.</p>",
+    "solution": "<p>Elaboramos um hotsite com as informações da programação da Arena de Brincadeiras Frozen. A galeria de fotos do site mostrava as imagens do Instagram que tivessem a hashtag #FrozenIguatemi. Todo o layout do site foi aprovado pelos representantes da Disney no Brasil. </p>",
+    "images": [
+        "arena-frozen-1.jpg",
+        "arena-frozen-2.jpg",
+        "arena-frozen-3.jpg"
+    ],
+    "videos": null,
+    "site": "http://www.amplifiq.com.br/memoria/frozen"
+}

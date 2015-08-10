@@ -1,0 +1,19 @@
+﻿{
+    "title": "Shopping Cidade Jardim",
+    "slug": "shopping-cidade-jardim",
+    "video_bg": null,
+    "client": "Shopping Cidade Jardim",
+    "next-case": null,
+    "type": "Totens Interativos",
+    "lead": "Como interagir e ajudar consumidores na hora das compras.",
+    "tags": "#criação #desenvolvimento_tecnológico",
+    "challenge": "<p>Desenvolver um software para rodar em totens de 42 polegadas disponíveis no Shopping Cidade Jardim, de São Paulo, com o objetivo de auxiliar os consumidores principalmente na busca de lojas e serviços oferecidos pelo shopping.</p>",
+    "solution": "<p>Criamos um software intuitivo, prático e informativo para ajudar os consumidores que tinham dúvidas na hora de encontrar suas lojas favoritas no shopping. A pesquisa poderia ser feita por segmento, nome ou pela lista completa. Serviços também poderiam ser pesquisados e encontrados. O software contavam com mapas bem desenhados por andar.</p>",
+    "images": [
+        "shopping-cidade-jardim-1.jpg",
+        "shopping-cidade-jardim-2.jpg",
+        "shopping-cidade-jardim-3.jpg"
+    ],
+    "videos": null,
+    "site": null
+}

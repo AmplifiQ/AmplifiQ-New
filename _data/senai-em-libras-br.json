@@ -1,0 +1,18 @@
+﻿{
+    "title": "Senai em Libras",
+    "slug": "senai-em-libras",
+    "video_bg": null,
+    "client": "Senai",
+    "next-case": null,
+    "type": "Apresentação",
+    "lead": "Inclusão social e profissional por meio do ensino.",
+    "tags": "#criação #desenvolvimento_tecnológico #motion_design",
+    "challenge": "<p>Criar uma apresentação para ser utilizada em cursos profissionalizantes do Senai para deficientes auditivos. Deveria conter imagens com a Língua Brasileira de Sinais (Libras) e permitir que qualquer ferramenta ou tópico fosse encontrado rapidamente pelo professor.</p>",
+    "solution": "<p>Desenvolvemos uma apresentação offline para os cursos a serem usados na indústria. Contém dezenas de telas mostrando as ferramentas utilizadas (martelo, serra, pregos, etc) e como se fala em Libras. A apresentação também aborda temas como segurança no trabalho e demais processos para os trabalhadores das indústrias.</p>",
+    "images": [
+        "senai-em-libras-1.jpg",
+        "senai-em-libras-2.jpg"
+    ],
+    "videos": null,
+    "site": null
+}

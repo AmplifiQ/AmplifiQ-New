@@ -1,0 +1,38 @@
+<div class="case-info clearfix">
+
+    <div class="info clearfix">
+        <h2 class="title">{{title}}</h2>
+        <h3 class="lead">{{lead}}</h3>
+        <hr class="sep-line" />
+        <p class="client">Cliente: {{client}}</p>
+        <p class="tags">{{tags}}</p>
+        <div class="clear"></div>
+
+        <div class="challenge">
+            <h4 class="title">Desafio</h4>
+            <div class="col">
+                {{{challenge}}}
+            </div>
+            <hr class="sep-line-ver" />
+        </div>
+
+        <div class="solution">
+            <h4 class="title">Solução</h4>
+            <div class="col">
+                {{{solution}}}
+            </div>
+        </div>
+    </div>
+
+    <div class="images clearfix">
+        {{{images}}}
+    </div>
+
+    <div class="videos clearfix">
+        {{{videos}}}
+    </div>
+
+    <div class="clearfix">
+        {{{site}}}
+    </div>
+</div>

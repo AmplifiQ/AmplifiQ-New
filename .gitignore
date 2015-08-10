@@ -41,3 +41,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Custom
+\#SRC
+*.sublime-project
+*.sublime-workspace
+_data/_EXAMPLE.json
+_js/justice.min.js

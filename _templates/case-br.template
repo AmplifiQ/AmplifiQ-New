@@ -1,0 +1,12 @@
+            {{{bg_video}}}
+            <div class="wrap">
+                <img class="illustration img-echo" src="_img/spacer.gif" data-echo="_img/cases/{{slug}}-img.png">
+                <div class="intro"><!--
+                    --><div class="info">
+                        <h2 class="title">{{title}}</h2>
+                        <h3 class="type">{{type}}</h3>
+                        <p class="lead">{{lead}}</p>
+                        <a href="#" class="open-content" data-animate="1" data-template="case-info" data-case="{{slug}}">Conheça</a>
+                    </div>
+                </div>
+            </div>

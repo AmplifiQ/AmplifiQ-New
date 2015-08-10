@@ -1,0 +1,19 @@
+﻿{
+    "title": "Báril",
+    "slug": "baril",
+    "video_bg": null,
+    "client": "Báril",
+    "next-case": null,
+    "type": "Jogo Pátio Perfeito",
+    "lead": "Como prospectamos clientes para a Báril por meio de um jogo.",
+    "tags": "#criação #desenvolvimento_tecnológico #motion_design",
+    "challenge": "<p>Mostrar aos potenciais compradores da construtora as vantagens de se adquirir um terreno no empreendimento Páteo Marbella, em Xangri-lá, por meio de um jogo virtual. Nele  as pessoas poderiam imaginar como seria morar no condomínio com pátios personalizados.</p>",
+    "solution": "<p>Desenvolvemos um jogo online onde o internauta montava o seu próprio quintal no Páteo Marbella. O game disponibilizava quatro opções de terrenos, que imitavam as plantas das casas do empreendimento. No local era possível inserir árvores, decks, bancos, churrasqueiras e deixa-lo o mais próximo possível do desejo do cliente. Posteriormente, a ideia poderia ser compartilhada nas redes sociais e o autor do pátio mais original ganharia um iPad. Com a ação, conseguimos captar mais de 460 projetos.</p>",
+    "images": [
+        "baril-1.jpg",
+        "baril-2.jpg",
+        "baril-3.jpg"
+    ],
+    "videos": null,
+    "site": "http://www.amplifiq.com.br/memoria/baril/game/"
+}

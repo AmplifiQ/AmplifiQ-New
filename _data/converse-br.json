@@ -1,0 +1,20 @@
+﻿{
+    "title": "Converse",
+    "slug": "converse",
+    "video_bg": null,
+    "client": "Converse",
+    "next-case": null,
+    "type": "Catálogo de produtos",
+    "lead": "Apresentar os novos produtos da marca aos vendedores.",
+    "tags": "#criação #desenvolvimento_tecnológico #fotografia #ilustração",
+    "challenge": "<p>Fazer a produção e a execução dos catálogos anuais da marca. Cada catálogo apresentaria uma nova coleção. </p>",
+    "solution": "<p>Durante quatro anos trabalhamos no desenvolvimento de oito catálogos para a marca de tênis. Elaboramos a identidade visual, realizamos a captação das imagens, a diagramação e toda a finalização do material. Também foi produzida uma versão digital do catálogo para acesso rápido.</p>",
+    "images": [
+        "converse-1.jpg",
+        "converse-2.jpg",
+        "converse-3.jpg",
+		"converse-4.jpg"
+    ],
+    "videos": null,
+    "site": null
+}

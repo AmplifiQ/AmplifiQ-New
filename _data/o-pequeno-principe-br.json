@@ -1,0 +1,19 @@
+﻿{
+    "title": "O Pequeno Príncipe",
+    "slug": "o-pequeno-principe",
+    "video_bg": null,
+    "client": "Iguatemi Porto Alegre",
+    "next-case": null,
+    "type": "Jogo",
+    "lead": "Como conseguimos cativar pequenos fãs",
+    "tags": "#criação #desenvolvimento_tecnológico #motion_design #cms",
+    "challenge": "<p>Desenvolver um jogo online baseado no premiado livro “O Pequeno Príncipe”, de Antoine de Saint-Exupéry, com o objetivo de levar as crianças ao shopping para conhecer a exposição promovida pela Iguatemi.</p>",
+    "solution": "<p>Criamos um jogo no qual a criança o iniciava em casa e, para avançar até determinada fase, era estimulada a ir ao shopping retirar seu código para, então, continuar o jogo. A ação foi uma das de maior sucesso e público que fizemos para o Iguatemi. Além disso, o game foi replicado para outros shoppings do Brasil e ganhou elogios da família de Saint-Exupéry, na França.</p>",
+    "images": [
+        "o-pequeno-principe-1.jpg",
+        "o-pequeno-principe-2.jpg",
+        "o-pequeno-principe-3.jpg"
+    ],
+    "videos": null,
+    "site": "http://www.amplifiq.com.br/memoria/pequeno_principe/"
+}

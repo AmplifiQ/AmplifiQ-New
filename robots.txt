@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /_geo_ip/
+Disallow: /_data/
+Disallow: /_languages/
+Disallow: /_templates/

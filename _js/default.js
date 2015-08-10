@@ -83,7 +83,6 @@ navigator.browserVersion = (function() {
         M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
     if (/trident/i.test(M[1])) {
         tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
-        //return 'IE ' + (tem[1] || '');
         return 'ie' + (' ie' + tem[1] || '');
     }
     if (M[1] === 'Chrome') {
@@ -206,7 +205,7 @@ $(document).ready(function() {
         var mobile = '' + isMobile.any();
         $('html').addClass(mobile.toLowerCase() + ' is-mobile');
 
-        $('.showreel .video-home-bg').attr('src', '');
+        $('.showreel .video-home-bg').attr('src', '').css('display', 'none');
 
         imgArr.push(
             '_img/mobile/cases/arena-frozen-1.jpg',
@@ -304,7 +303,7 @@ $(document).ready(function() {
 
     // Force first slide on load
     var hash = location.hash.replace('#', '');
-    //location.hash = '';
+    location.hash = '';
 
     // 'lang' is already set on the index page
     // 'siteSections' is already set on the index page
@@ -410,12 +409,6 @@ $(document).ready(function() {
     $(document).on(transitionEvent, '.loading', function(e) {
         if ($(e.target).is(this)) {
 
-            if (!isMobile.any()) {
-                $('*[data-animate="1"]').each(function() {
-                    animateButton($(this));
-                });
-            }
-
             $('.loaded').css({
                 opacity: 1,
                 left: 0
@@ -425,8 +418,13 @@ $(document).ready(function() {
 
             echo.render();
 
-            if (!$('html').hasClass('is-mobile')) {
+            if (!isMobile.any()) {
+                $('*[data-animate="1"]').each(function() {
+                    animateButton($(this));
+                });
+
                 animateHome();
+                playVideoHomeBg();
             }
 
             $(this).off(transitionEvent);
@@ -442,11 +440,6 @@ $(document).ready(function() {
         viewportWidth = $(window).width();
         viewportHeight = $(window).height();
         screenRatio = (viewportWidth / viewportHeight);
-
-        if (viewportWidth <= 768) {
-            //videoHomeShowreel.attr('src', 'https://player.vimeo.com/video/134987858?api=1&amp;player_id=player-home-showreel&amp;autoplay=0&amp;loop=0&amp;badge=0&amp;byline=0&amp;portrait=0&amp;title=0&amp;playbar=1');
-            //videoHomeBg.attr('src', '');
-        }
 
         if (isMobile.any() && viewportWidth <= 768) {
             if (viewportWidth > viewportHeight) {
@@ -861,12 +854,10 @@ $(document).ready(function() {
             .done(function(data) {
 
                 if (data.video_bg !== null) {
-
                     data.player_id = 'player_' + data.slug;
-
                     playerVars = "?api=1";
                     playerVars += "&player_id=" + data.player_id;
-                    playerVars += "&autoplay=0";
+                    playerVars += "&autoplay=1";
                     playerVars += "&loop=1";
                     playerVars += "&badge=0";
                     playerVars += "&byline=0";
@@ -886,15 +877,14 @@ $(document).ready(function() {
                 container.on('click', '.open-content', function(e) {
 
                     e.preventDefault();
-
                     pauseScroll();
-
                     mobileBar.css('opacity', 1);
-
                     caseVideoBg = $(this).closest('.case').find(videoBg);
 
-                    if (caseVideoBg.length) {
-                        caseVideoBg.vimeo('pause');
+                    if ($('html').hasClass('is-mobile')) {
+                        if (caseVideoBg.length) {
+                            caseVideoBg.vimeo('pause');
+                        }
                     }
 
                     var template = $(this).data('template') + '-' + lang;
@@ -934,10 +924,8 @@ $(document).ready(function() {
                                     playerVars += "&title=0";
                                     playerVars += "&playbar=0";
 
-                                    vid += '<div class="youtube-container"><div class="youtube-player" id="' + player_id + '" data-id="' + videos[j] + '"></div></div>';
-
+                                    vid += '<div class="vimeo-container"><div class="vimeo-player" id="' + player_id + '" data-id="' + videos[j] + '"></div></div>';
                                 }
-
                                 data.videos = vid;
                             }
 
@@ -952,7 +940,6 @@ $(document).ready(function() {
                             offContent.css('opacity', 1);
                         })
                         .done(function() {
-
                             $('.open-menu').show();
                             navContainer.removeClass('open');
 
@@ -994,15 +981,19 @@ $(document).ready(function() {
             console.log(jqXHR, textStatus, errorThrown);
         });
 
+    /**
+     * Vimeo Embedding
+     * based on http://www.labnol.org/internet/light-youtube-embeds/27941/
+     */
     function renderVideos() {
-        var videos = $('.youtube-player');
+        var videos = $('.vimeo-player');
         videos
             .each(function() {
                 var video = $(this);
-                getThumbnail(video.data('id'))
+                getVimeoThumbnail(video.data('id'))
                     .success(function(data) {
                         var thumbnail_src = data.thumbnail_url;
-                        video.html('<img class="youtube-thumb" src="' + thumbnail_src + '"><div class="play-button" data-animate="1"></div>');
+                        video.html('<img class="vimeo-thumb" src="' + thumbnail_src + '"><div class="play-button" data-animate="1"></div>');
                         video
                             .find($('*[data-animate="1"]'))
                             .each(function() {
@@ -1022,7 +1013,7 @@ $(document).ready(function() {
             });
     }
 
-    function getThumbnail(id) {
+    function getVimeoThumbnail(id) {
         return $.ajax({
             type: 'GET',
             url: 'https://vimeo.com/api/oembed.json?url=https%3A//vimeo.com/' + id,
@@ -1031,9 +1022,9 @@ $(document).ready(function() {
     }
 
     function renderVimeoEmbed() {
-        var container = $(this).closest('.youtube-container'),
-            player_id = container.children('.youtube-player').attr('id'),
-            video_id = container.children('.youtube-player').data('id'),
+        var container = $(this).closest('.vimeo-container'),
+            player_id = container.children('.vimeo-player').attr('id'),
+            video_id = container.children('.vimeo-player').data('id'),
             vimeoIframe;
 
         playerVars = "?api=1";
@@ -1047,7 +1038,7 @@ $(document).ready(function() {
         playerVars += "&playbar=1";
 
         vimeoIframe = '<iframe class="video" src="https://player.vimeo.com/video/' + video_id + playerVars + '"></iframe>';
-        container.children('.youtube-player').html(vimeoIframe);
+        container.children('.vimeo-player').html(vimeoIframe);
     }
 
     var pageSwing = 0;
@@ -1145,25 +1136,27 @@ $(document).ready(function() {
                     closeTheMenu();
                 }
 
+                //if ($('html').hasClass('is-mobile')) {
+                //}
+
             },
             afterLoad: function(anchorLink, index) {
-                stopVideoBg();
-
                 echo.render();
+                    stopVideoBg();
 
-                if (index == 1 && !$('html').hasClass('is-mobile')) {
+                if (index == 1 && (!$('html').hasClass('is-mobile'))) {
                     playVideoHomeBg();
                 }
 
-                if (index == 2 && !$('.solutions .list li:first-child').hasClass('animate-solutions')) {
+                if (index == 2 && (!$('.solutions .list li:first-child').hasClass('animate-solutions'))) {
                     animateBgSolutions();
                 }
 
-                if (index == 3 && !$('.list-clients').hasClass('animate-clients')) {
+                if (index == 3 && (!$('.list-clients').hasClass('animate-clients'))) {
                     animateClients();
                 }
 
-                if (index == 6 && $('section.expansao-iguatemi').hasClass('active') && !$('html').hasClass('is-mobile')) {
+                if (index == 6 && ($('section.expansao-iguatemi').hasClass('active')) && (!$('html').hasClass('is-mobile'))) {
                     console.log('playing video bg on expansao-iguatemi');
                     var section = $(this);
                     playVideoBg(section);

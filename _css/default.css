@@ -2252,7 +2252,9 @@ hr {
 @media screen and (max-width: 768px) {
     .solutions .wrap {
         height: 100%;
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        transition: -webkit-transform 0.7s ease-out;
         transition: transform 0.7s ease-out;
     }
 
@@ -2271,16 +2273,20 @@ hr {
     }
 
     .solutions-opened .wrap {
-        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
     }
 
     .logo {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+        transition: -webkit-transform 0.7s ease-out;
         transition: transform 0.7s ease-out;
     }
 
     .solutions-opened .logo {
-        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
     }
 
     .solutions .list {
@@ -3887,7 +3893,7 @@ hr {
     }
 
     .case.monster-high .intro .open-content {
-        color: #c1272e;
+        color: #c1d72e;
         background-image: url('../_img/mobile/bt-open-case-mobile-green.png');
     }
 
@@ -4238,16 +4244,16 @@ html.fp-enabled,
 }
 
 /**
- * Youtube Embedding 2.6.4
- * http://www.labnol.org/internet/light-youtube-embeds/27941/
+ * Vimeo Embedding
+ * based on http://www.labnol.org/internet/light-youtube-embeds/27941/
  */
-.youtube-container {
+.vimeo-container {
     margin: 0 auto;
     width: 100%;
     max-width: 100%;
 }
 
-.youtube-player {
+.vimeo-player {
     padding-bottom: 56.25%;
     overflow: hidden;
     position: relative;
@@ -4256,7 +4262,7 @@ html.fp-enabled,
     cursor: pointer;
 }
 
-.youtube-player iframe {
+.vimeo-player iframe {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -4264,7 +4270,7 @@ html.fp-enabled,
     left: 0;
 }
 
-.youtube-thumb {
+.vimeo-thumb {
     bottom: 0;
     left: 0;
     margin: auto;
@@ -4365,11 +4371,11 @@ html.fp-enabled,
     /*visibility: visible !important;*/
 }
 
-.youtube-container {
+.vimeo-container {
     margin: 0 0 20px;
 }
 
-.youtube-container .play-button {
+.vimeo-container .play-button {
     width: 140px;
     height: 55px;
     left: 50%;
@@ -4379,7 +4385,7 @@ html.fp-enabled,
     background: url('../_img/bt-case-play-video.png') no-repeat 0 0;
 }
 
-.youtube-container .play-button.mouse-enter {
+.vimeo-container .play-button.mouse-enter {
     background-position: 0 -770px;
     -webkit-animation: youtubePlayButtonOn 0.5s steps(14) 1;
     animation: youtubePlayButtonOn 0.5s steps(14) 1;
@@ -4405,7 +4411,7 @@ html.fp-enabled,
     }
 }
 
-.youtube-container .play-button.mouse-leave {
+.vimeo-container .play-button.mouse-leave {
     -webkit-animation: youtubePlayButtonOff 0.5s steps(14) 1;
     animation: youtubePlayButtonOff 0.5s steps(14) 1;
 }

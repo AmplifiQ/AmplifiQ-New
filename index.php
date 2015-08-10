@@ -98,7 +98,6 @@ if (!isset($_GET['lang']) || $lang == '') {
         <div class="aligner"></div>
         <div class="logo-loader"></div>
 
-        <div class="logo-type">AmplifiQ</div>
         <div class="line-rail">
             <div class="line-bar"></div>
         </div>
@@ -128,7 +127,7 @@ if (!isset($_GET['lang']) || $lang == '') {
                     <div class="mustache">Agência <strong>que faz</strong>,<br><strong>Produtora</strong> que pensa.</div>
                     <div class="contact">
                         <span><strong><a class="hello" href="mailto:hello@amplifiq.com.br?subject=Hello&#44;&#160;AmplifiQ!">hello@amplifiq.com.br</a></strong></span>
-                        <span>POA // <a class="tel" href="tel:+555133773039">+55 51 3377.3039</a></span>
+                        <span><a class="tel" href="tel:+555133773039">+55 51 3377.3039</a></span>
                         <span class="address">Av. Cristovão Colombo, 2834<br>Higienópolis, Porto Alegre - RS</span>
                         <?php
                         /*
@@ -177,10 +176,10 @@ if (!isset($_GET['lang']) || $lang == '') {
                             <div class="clear"></div>
                             <a class="button-showreel" data-animate="1">Assista o showreel</a>
                             <div class="clear"></div>
-                            <a class="get-to-know-us" href="#solutions" data-animate="1">Conheça nossos serviços</a>
+                            <a class="get-to-know-us" href="#solutions" data-animate="1">Conheça nossas soluções</a>
                         </div>
                     </div>
-                    <a class="button-hidereel" data-animate="1">HIDE SHOWREEL</a>
+                    <a class="button-hidereel" data-animate="1">Fechar o showreel</a>
                 </section>
                 <!-- /Showreel -->
 

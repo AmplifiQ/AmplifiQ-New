@@ -1093,6 +1093,8 @@ $(document).ready(function() {
 
             onLeave: function(index, nextIndex, direction) {
 
+                stopVideoBg();
+
                 if (mainContent.hasClass('main-slide')) {
                     mainContent.removeClass('main-slide');
                     mainContent.on(transitionEvent, function(e) {
@@ -1134,7 +1136,6 @@ $(document).ready(function() {
             },
             afterLoad: function(anchorLink, index) {
                 echo.render();
-                    stopVideoBg();
 
                 if (index == 1 && (!$('html').hasClass('is-mobile'))) {
                     playVideoHomeBg();

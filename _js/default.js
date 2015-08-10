@@ -546,7 +546,6 @@ $(document).ready(function() {
         e.preventDefault();
         videoHomeShowreel
             .on('finish', function() {
-                console.log('finish (button)');
                 hideReel();
             });
         showReel();
@@ -579,14 +578,12 @@ $(document).ready(function() {
                 .css('opacity', 1)
                 .vimeo('play')
                 .on('finish', function() {
-                    console.log('finish (function)');
                     hideReel();
                 });
         } else {
             videoHomeShowreel
                 .css('opacity', 1)
                 .on('finish', function() {
-                    console.log('finish (function, mobile)');
                     hideReel();
                 });
         }
@@ -1004,7 +1001,6 @@ $(document).ready(function() {
             })
             .promise()
             .done(function() {
-                console.log('done');
                 $('.off-content')
                     .find($('*[data-animate="1"]'))
                     .each(function() {
@@ -1135,10 +1131,6 @@ $(document).ready(function() {
                 if (navContainer.hasClass('open')) {
                     closeTheMenu();
                 }
-
-                //if ($('html').hasClass('is-mobile')) {
-                //}
-
             },
             afterLoad: function(anchorLink, index) {
                 echo.render();
@@ -1157,7 +1149,6 @@ $(document).ready(function() {
                 }
 
                 if (index == 6 && ($('section.expansao-iguatemi').hasClass('active')) && (!$('html').hasClass('is-mobile'))) {
-                    console.log('playing video bg on expansao-iguatemi');
                     var section = $(this);
                     playVideoBg(section);
                 }
@@ -1199,14 +1190,12 @@ $(document).ready(function() {
             $.fn.fullpage.setAllowScrolling(true);
             $.fn.fullpage.setKeyboardScrolling(true);
         }, ms);
-        console.log('resumeScroll = ' + ms);
     }
 
     function pauseScroll() {
         clearTimeout(pauseTimeout);
         $.fn.fullpage.setAllowScrolling(false);
         $.fn.fullpage.setKeyboardScrolling(false);
-        console.log('pauseScroll');
     }
 
 });

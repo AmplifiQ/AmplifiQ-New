@@ -1002,6 +1002,14 @@ hr {
     background-image: url('../_img/cases/expansao-iguatemi-bg.jpg');
 }
 
+.section.sound-thinkers {
+    background-image: url('../_img/cases/soundt-bg-desk.jpg');
+}
+
+.section.prolight {
+    background-image: url('../_img/cases/prolight-bg-desk.jpg');
+}
+
 .section.xp-educacao {
     background-image: url('../_img/cases/xp-educacao-bg.jpg');
 }
@@ -1094,6 +1102,14 @@ hr {
 
     .section.expansao-iguatemi {
         background-image: url('../_img/mobile/cases/expansao-iguatemi-bg.jpg');
+    }
+
+    .section.sound-thinkers {
+        background-image: url('../_img/mobile/cases/soundt-bg-mob.jpg');
+    }
+
+    .section.prolight {
+        background-image: url('../_img/mobile/cases/prolight-bg-mob.jpg');
     }
 
     .section.xp-educacao {

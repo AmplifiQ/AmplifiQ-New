@@ -161,7 +161,7 @@ if (!isset($_GET['lang']) || $lang == '') {
                 <section id="section-showreel" class="showreel section">
 
                     <div class="video-curtain"></div>
-                    <iframe id="player-home-bg" class="video-bg video-home-bg" src="https://player.vimeo.com/video/134987859?api=1&amp;player_id=player-home-bg&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;byline=0&amp;portrait=0&amp;title=0&amp;playbar=0&amp;fullscreen=0" width="2048" height="1152" frameborder="0"></iframe>
+                    <iframe id="player-home-bg" allow=autoplay class="video-bg video-home-bg" src="https://player.vimeo.com/video/134987859?api=1&amp;player_id=player-home-bg&amp;autoplay=1&amp;loop=1&amp;badge=0&amp;byline=0&amp;portrait=0&amp;title=0&amp;playbar=0&amp;fullscreen=0" width="2048" height="1152" frameborder="0"></iframe>
                     <div class="home-bg"></div>
 
                     <iframe id="player-home-showreel" class="video-bg video-home-showreel" src="https://player.vimeo.com/video/134987858?api=1&amp;player_id=player-home-showreel&amp;autoplay=0&amp;loop=0&amp;badge=0&amp;byline=0&amp;portrait=0&amp;title=0&amp;playbar=0&amp;fullscreen=0" width="2048" height="1152" frameborder="0" webkitAllowFullScreen="0" mozallowfullscreen="0" allowFullScreen="0"></iframe>
@@ -402,6 +402,8 @@ if (!isset($_GET['lang']) || $lang == '') {
 <?php
     $cases = array(
         'iguatemi-porto-alegre',
+        'sound-thinkers',
+        'prolight',
         'converse',
         'expansao-iguatemi',
         'xp-educacao',

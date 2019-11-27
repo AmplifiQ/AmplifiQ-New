@@ -1,17 +1,17 @@
 ﻿{
-    "title": "Sound Thinkers",
-    "slug": "sound-thinkers",
+    "title": "Iguatemi",
+    "slug": "iguatemi-novo",
     "video_bg": null,
-    "client": "Sound Thinkers",
+    "client": "Iguatemi",
     "next-case": null,
     "type": "Novo Site",
-    "lead": "Estratégias sonoras",
+    "lead": "Coisas boas acontecem aqui",
     "tags": "#criação #desenvolvimento_tecnológico #cms #responsivo",
     "challenge": "",
     "solution": "",
     "images": [
-        "soundt-about.jpg",
-        "soundt-project.jpg"
+        "iguatemi-novo-home.jpg",
+        "iguatemi-novo-servicos.jpg"
     ],
     "videos": null,
     "site": ""

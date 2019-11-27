@@ -1,17 +1,16 @@
 ﻿{
-    "title": "Prolight",
-    "slug": "prolight",
+    "title": "Triptri",
+    "slug": "triptri",
     "video_bg": null,
-    "client": "Prolight",
+    "client": "Triptri",
     "next-case": null,
-    "type": "Novo ecommerce",
-    "lead": "Novo jeito de pensar na venda",
+    "type": "Novo Portal de vendas",
+    "lead": "Conheça novos lugares com a TripTri",
     "tags": "#criação #desenvolvimento_tecnológico #cms #responsivo #ecommerce",
     "challenge": "",
     "solution": "",
     "images": [
-        "prolight-home.jpg",
-        "prolight-loja-virtual.jpg"
+        "triptri-home.jpg"
     ],
     "videos": null,
     "site": ""

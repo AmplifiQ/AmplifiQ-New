@@ -401,9 +401,11 @@ if (!isset($_GET['lang']) || $lang == '') {
                 <!-- CASES -->
 <?php
     $cases = array(
+        'iguatemi-novo',
         'iguatemi-porto-alegre',
         'sound-thinkers',
         'prolight',
+        'triptri',
         'converse',
         'expansao-iguatemi',
         'xp-educacao',
@@ -449,7 +451,7 @@ if (!isset($_GET['lang']) || $lang == '') {
                         <a href="http://vimeo.com/AmplifiQ" rel="external" class="vimeo" data-tooltip="Vimeo">AmplifiQ <?php echo t('no Vimeo'); ?></a>
                     </li>
                 </ul>
-                <span class="projects"><?php echo t('Visite nosso'); ?> <strong><a href="http://www.amplifiq.com.br/portfolio_amp/" target="_blank"><?php echo t('Arquivo de Projetos'); ?></a></strong> <?php //echo t('para ver mais do nosso trabalho'); ?>.</span>
+                
             </div>
         </footer>
     </div>

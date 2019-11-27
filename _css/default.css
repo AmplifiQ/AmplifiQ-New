@@ -1010,6 +1010,14 @@ hr {
     background-image: url('../_img/cases/prolight-bg-desk.jpg');
 }
 
+.section.triptri {
+    background-image: url('../_img/cases/triptri-bg-desk.jpg');
+}
+
+.section.iguatemi-novo {
+    background-image: url('../_img/cases/iguatemi-novo-bg-desk.jpg');
+}
+
 .section.xp-educacao {
     background-image: url('../_img/cases/xp-educacao-bg.jpg');
 }
@@ -1110,6 +1118,14 @@ hr {
 
     .section.prolight {
         background-image: url('../_img/mobile/cases/prolight-bg-mob.jpg');
+    }
+
+    .section.triptri {
+        background-image: url('../_img/mobile/cases/triptri-bg-mob.jpg');
+    }
+
+    .section.iguatemi-novo {
+        background-image: url('../_img/mobile/cases/iguatemi-novo-bg-mob.jpg');
     }
 
     .section.xp-educacao {
@@ -3490,6 +3506,16 @@ hr {
     background-image: url('../_img/bt-case-open-maroon.png');
 }
 
+.case.triptri .intro::before,
+.case.triptri .intro .info {
+    color: #373531;
+    border-color: #373531;
+}
+
+.case.triptri .intro .open-content {
+    background-image: url('../_img/bt-case-open-grey.png');
+}
+
 .case.converse .intro::before,
 .case.converse .intro .info {
     color: #373531;
@@ -3973,6 +3999,7 @@ hr {
     }
 
     .case.senai-em-libras .intro .open-content,
+    .case.triptri .intro .open-content,
     .case.converse .intro .open-content {
         color: #373531;
         background-image: url('../_img/mobile/bt-open-case-mobile-grey.png');
@@ -4539,3 +4566,9 @@ html.fp-enabled,
 /* up to 768px */
 @media screen and (max-width: 768px) {
 }
+
+
+
+/* TEMP */
+
+.solutions .list .solution .intro .how {display: none;}

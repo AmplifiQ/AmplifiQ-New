@@ -8,20 +8,7 @@
         <p class="tags">{{tags}}</p>
         <div class="clear"></div>
 
-        <div class="challenge">
-            <h4 class="title">Desafio</h4>
-            <div class="col">
-                {{{challenge}}}
-            </div>
-            <hr class="sep-line-ver" />
-        </div>
 
-        <div class="solution">
-            <h4 class="title">Solução</h4>
-            <div class="col">
-                {{{solution}}}
-            </div>
-        </div>
     </div>
 
     <div class="images clearfix">

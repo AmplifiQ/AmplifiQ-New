@@ -436,7 +436,9 @@ if (!isset($_GET['lang']) || $lang == '') {
 
             <div class="col">
                 <span><a class="tel" data-tooltip="Ligue pra gente" href="tel:+555133773039">+55 51 3377.3039</a></span>
+                <?php /*
                 <a class="hello" data-tooltip="Entre em contato" href="mailto:hello@amplifiq.com.br?subject=Hello&#44;&#160;AmplifiQ!">hello@amplifiq.com.br</a>
+                */ ?>
             </div>
 
             <div class="col">

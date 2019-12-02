@@ -221,6 +221,7 @@ hr {
     overflow: visible;
     vertical-align: middle;
     text-indent: 9999px;
+    font-size: 0;
 }
 
 .social .facebook {

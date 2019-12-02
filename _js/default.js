@@ -367,10 +367,12 @@ $(document).ready(function() {
             $('.rotation').show();
         }
 
+        /*
         if (viewportWidth <= 768) {
             videoHomeShowreel.attr('src', 'https://player.vimeo.com/video/134987858?api=1&amp;player_id=player-home-showreel&amp;autoplay=0&amp;loop=0&amp;badge=0&amp;byline=0&amp;portrait=0&amp;title=0&amp;playbar=1');
             videoHomeBg.attr('src', '');
         }
+        */
 
         if (!$('html').hasClass('is-mobile')) {
             if (videoRatio >= screenRatio) {
